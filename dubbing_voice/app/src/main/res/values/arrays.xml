@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="arr_bit_rate">
+        <item>32000,32kb/s</item>
+        <item>64000,64kb/s</item>
+        <item>128000,128kb/s</item>
+        <item>192000,192kb/s</item>
+        <item>256000,256kb/s</item>
+        <item>320000,320kb/s</item>
+    </array>
+    <array name="arr_format_audio">
+        <item>MP3</item>
+        <item>AAC</item>
+    </array>
+    <array name="arr_languages">
+        <item>en,gb</item>
+        <item>fr,fr</item>
+        <item>de,de</item>
+        <item>es,es</item>
+        <item>pt,pt</item>
+        <item>it,it</item>
+        <item>hi,in</item>
+        <item>ja,jp</item>
+        <item>ko,kr</item>
+        <item>hu,hu</item>
+        <item>in,id</item>
+        <item>ms,my</item>
+        <item>fa,ir</item>
+        <item>ro,ro</item>
+        <item>ru,ru</item>
+        <item>th,th</item>
+        <item>tr,tr</item>
+        <item>ur,pk</item>
+        <item>vi,vn</item>
+        <item>zh,cn</item>
+        <item>zh-rTW,tw</item>
+        <item>ar,sa</item>
+        <item>bn,bd</item>
+        <item>cs,cz</item>
+    </array>
+</resources>

@@ -1,0 +1,187 @@
+<resources>
+    <string name="app_name">Video voice Dubbing &amp; Makeover</string>
+    <string name="tedpermission_setting">tedpermission_setting</string>
+    <string name="share_video">Share Video</string>
+    <string name="video_edit_segment">Video_edit_segment</string>
+
+    <string name="picture">Picture</string>
+
+    <string name="description_info">Info</string>
+
+    <string name="record">Record</string>
+
+    <string name="stop">Stop</string>
+
+    <string name="access_guide_1">1. Tap Open Settings</string>
+
+    <string name="access_guide_2">2. Permissions</string>
+
+    <string name="access_open">Open settings</string>
+
+    <string name="alert_button_cancel_rate_app">Not now</string>
+
+    <string name="alert_button_rate5star_app">Rate 5 Stars</string>
+
+    <string name="alert_content_rate_app">Hi, App developer has worked very hard to bring you the best free apps. Your 5-star rating is worth more than all money. Please write a good review on Play Store to encourage developer.</string>
+
+    <string name="alert_message_request_permission">This makes it possible for the app to change the phone\'s ringtone. You can grant the app permissions on the next screen.</string>
+
+    <string name="alert_select_fade">Time should be shorter than audio duration</string>
+
+    <string name="alert_title_failure">Error</string>
+
+    <string name="alert_title_request_permission">Allow system setting</string>
+
+    <string name="all">All</string>
+
+    <string name="androidx_startup">androidx.startup</string>
+
+
+    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+
+    <string name="artist_file"> | By X9 Converter</string>
+
+    <string name="bad_extension_error">Sorry, Mp3 Cutter is not yet able to edit files of type</string>
+
+    <string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+
+    <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
+
+    <string name="button_oki">OK</string>
+
+    <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
+
+    <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
+
+    <string name="character_counter_pattern">%1$d/%2$d</string>
+
+    <string name="characters_note">Must not contain the characters</string>
+
+    <string name="clear_text_end_icon_content_description">Clear text</string>
+
+    <string name="confirm_delete">Are you sure?</string>
+
+    <string name="content_2_dialog_detail">Format:</string>
+
+    <string name="content_3_dialog_detail">Size:</string>
+
+    <string name="content_4_dialog_detail">Path:</string>
+
+    <string name="content_flash_activity">Convert video to Audio</string>
+
+    <string name="content_toast">Reset successful</string>
+
+    <string name="context_menu_default_alarm">Set as alarm sound</string>
+
+    <string name="context_menu_default_notification">Set as Notification</string>
+
+    <string name="context_menu_default_ringtone">Set as Ringtone</string>
+
+    <string name="context_menu_delete">Delete</string>
+
+    <string name="convert_button">Convert to</string>
+
+    <string name="convert_multi">Successful conversion</string>
+
+    <string name="cursorPosition">11</string>
+
+    <string name="customize_bitrate">Bitrate</string>
+
+    <string name="cut_guide">View instructions</string>
+
+    <string name="cut_middle">Delete middle</string>
+
+    <string name="cut_middle_guide">Use the Delete middle function if you want to delete a certain part of the Song.</string>
+
+    <string name="default_notification_success_alarm">The alarm sound has been changed!</string>
+
+    <string name="default_notification_success_message">OK - Changed default notification sound</string>
+
+    <string name="default_ringtone_success_message_1">The Ringtone has been changed !</string>
+
+    <string name="default_web_client_id">989148480430-23i2hfi1bv0bgut6etkh7pr1hkj43rsp.apps.googleusercontent.com</string>
+
+    <string name="delete_failed">Unable to delete file</string>
+
+    <string name="edit_btn_save">Save</string>
+
+    <string name="edit_intent">Cut/Edit</string>
+
+    <string name="edit_intent_1">Audio cutter</string>
+
+    <string name="end_label">End</string>
+
+    <string name="err_merging_audio">Something went wrong. Please try again.</string>
+
+    <string name="error_icon_content_description">Error</string>
+
+    <string name="error_video">This Video can\'t be converted. Please try other Videos.</string>
+
+    <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
+
+
+    <string name="home_convert">Select Video</string>
+
+    <string name="icon_content_description">Dialog Icon</string>
+
+    <string name="is_dismiss">Do not show again</string>
+
+    <string name="item_view_role_description">Tab</string>
+
+    <string name="material_clock_display_divider">:</string>
+
+    <string name="material_clock_toggle_content_description">Select AM or PM</string>
+
+    <string name="material_hour_selection">Select hour</string>
+
+    <string name="material_hour_suffix">%1$s o\'clock</string>
+
+    <string name="material_minute_selection">Select minutes</string>
+
+    <string name="material_minute_suffix">%1$s minutes</string>
+
+
+    <string name="material_slider_range_end">Range end,</string>
+
+    <string name="material_slider_range_start">Range start,</string>
+
+    <string name="material_timepicker_am">AM</string>
+
+    <string name="material_timepicker_clock_mode_description">Switch to clock mode for the time input.</string>
+
+    <string name="material_timepicker_hour">Hour</string>
+
+    <string name="material_timepicker_minute">Minute</string>
+
+    <string name="material_timepicker_pm">PM</string>
+
+    <string name="material_timepicker_select_time">Select time</string>
+
+    <string name="material_timepicker_text_input_mode_description">Switch to text input mode for the time input.</string>
+
+    <string name="menu_guide">Instructions</string>
+
+    <string name="menu_rename">Rename</string>
+
+    <string name="menu_resetsong">Restore to original?</string>
+
+    <string name="menu_search">Search</string>
+
+    <string name="menu_share">Send</string>
+
+
+    <string name="multifile_convert">MultiFile Convert (BETA)</string>
+
+
+    <string name="volume_booster">Volume Booster</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_mode">SELECT MODE</string>
+    <string name="title_dialog_detail" />
+    <string name="select_video">select video</string>
+    <string name="video_to_audio_n_converter">Video to audio \n converter</string>
+    <string name="saved_history">saved history</string>
+    <string name="music_perview">Music Perview</string>
+
+
+</resources>

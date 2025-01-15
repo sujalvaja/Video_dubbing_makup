@@ -1,0 +1,115 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'version-catalog'
+}
+
+android {
+    namespace 'com.example.dubbing_voice'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.dubbing_voice"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    buildFeatures {
+        viewBinding true
+
+    }
+    buildFeatures {
+        dataBinding true
+    }
+
+    packagingOptions {
+        resources.excludes.add("META-INF/*")
+
+    }
+    ext {
+        ffmpegKitPackage = "<package name>"
+    }
+
+
+}
+
+dependencies {
+
+    annotationProcessor 'com.android.databinding:compiler:3.5.1'
+    implementation 'com.github.lamphuong223:range-seekbar:1.0.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.databinding:databinding-compiler-common:8.0.2'
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation 'com.google.android.gms:play-services-tagmanager-v4-impl:18.0.3'
+    implementation 'com.google.android.ump:user-messaging-platform:2.0.0'
+    implementation 'com.google.firebase:firebase-config:21.4.0'
+    implementation 'com.google.android.gms:play-services-measurement-api:21.3.0'
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    implementation 'com.github.sina-seyfi:AdvancedCardView:1.0.1'
+    implementation 'de.psdev.licensesdialog:licensesdialog:2.2.0'
+    implementation 'com.github.dimadake:billing:1.0.1'
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    implementation 'com.github.microshow:RxFFmpeg:4.9.0'
+    implementation 'com.github.microshow:RxFFmpeg:4.9.0'
+    implementation 'io.github.ParkSangGwon:tedpermission-normal:3.3.0'
+    implementation 'io.github.ParkSangGwon:tedpermission-coroutine:3.3.0'
+    implementation 'io.github.ParkSangGwon:tedpermission-rx2:3.3.0'
+    implementation 'io.github.ParkSangGwon:tedpermission-rx3:3.3.0'
+    implementation 'org.florescu.android.rangeseekbar:rangeseekbar-library:0.4.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
+    implementation 'org.florescu.android.rangeseekbar:rangeseekbar-library:0.4.0'
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.2'
+    implementation 'io.reactivex.rxjava3:rxjava:3.1.6'
+    implementation 'com.github.tbruyelle:rxpermissions:0.12'
+    implementation 'com.iceteck.silicompressorr:silicompressor:2.2.4'
+    implementation 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.3.0'
+    implementation 'com.github.MasayukiSuda:ExoPlayerFilter:v0.2.4'
+    implementation 'com.github.MasayukiSuda:Mp4Composer-android:v0.3.8'
+    implementation 'com.googlecode.mp4parser:isoparser:1.1.22'
+    implementation 'com.github.yehiahd:FastSave-Android:1.0.6'
+    implementation 'com.arthenica:ffmpeg-kit-video:5.1.LTS'
+    implementation 'com.airbnb.android:lottie:6.0.1'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation "androidx.constraintlayout:constraintlayout-core:1.0.4"
+    implementation 'com.facebook.android:audience-network-sdk:6.14.0'
+    implementation 'com.google.firebase:firebase-firestore:24.6.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1'
+    implementation 'com.github.fccaikai:AndroidPermissionX:1.0.0'
+    implementation 'com.mikhaellopez:circularprogressbar:3.1.0'
+    implementation 'com.airbnb.android:lottie:3.4.0'
+    implementation 'com.google.android.exoplayer:exoplayer:2.10.2'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.10.2'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.10.2'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.10.2'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.10.2'
+    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:2.10.2'
+    androidTestImplementation 'androidx.test:rules:1.5.0'
+    implementation 'com.afollestad.material-dialogs:core:3.3.0'
+
+}

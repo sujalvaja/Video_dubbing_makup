@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+<!--    <style name="Base.Theme.Dubbing_voice" parent="Theme.AppCompat.DayNight.NoActionBar">
+        &lt;!&ndash; Customize your light theme here. &ndash;&gt;
+         <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+    </style>-->
+
+    <style name="Theme.Dubbing_voice" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+    <style name="TransparentBackground">
+    <item name="android:windowBackground">@android:color/black</item>
+    <item name="android:windowNoTitle">true</item>
+
+    </style>
+
+
+    <style name="recordBeautyDialogStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item><!--除去title-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@color/transparent</item><!--除去背景色-->
+    </style>
+
+    <!-- This configures the styles for the title within the Toolbar  -->
+    <style name="dialogAnim" parent="@android:style/Animation.Dialog">
+        <!--<item name="android:windowEnterAnimation">@anim/anim_slid_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/anim_slid_out_bottom</item>-->
+    </style>
+
+    <style parent="@style/Theme.AppCompat.Light" name="MyRadioButton_1">
+
+    <item name="colorControlActivated">#17b7b7</item>
+
+    <item name="colorControlNormal">#37445f</item>
+
+</style>
+</resources>

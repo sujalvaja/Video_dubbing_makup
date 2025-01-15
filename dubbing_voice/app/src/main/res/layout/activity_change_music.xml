@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/back_icn" />
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:fontFamily="@font/roboto_medium_0"
+            android:gravity="center"
+            android:text="CHANGE AUDIO"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+        <ImageView
+            android:id="@+id/ic_done"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:src="@drawable/done_icn" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ad_layout"
+        android:layout_below="@+id/title_layout"
+        android:layout_marginBottom="@dimen/_10sdp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/video_card_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"
+            android:layout_margin="@dimen/_10sdp"
+            app:cardBackgroundColor="#1B1B1F"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/video_card_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            app:cardBackgroundColor="#08134c"
+            app:cardCornerRadius="@dimen/_10sdp">
+
+
+            <RelativeLayout
+                android:id="@+id/rel_videoView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_180sdp">
+
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent" />
+                <RelativeLayout
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerInParent="true"
+                    >
+
+                    <ImageView
+                        android:id="@+id/btnPlayVideo"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/play_icn" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/video_card_main"
+                android:layout_gravity="bottom"
+                >
+
+                <LinearLayout
+                    android:id="@+id/seek_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_3sdp"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:layout_weight="1.8"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <SeekBar
+                                android:id="@+id/sbVideo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:maxHeight="@dimen/_7sdp"
+                                android:minHeight="@dimen/_7sdp"
+                                android:progress="10"
+                                android:progressDrawable="@drawable/seekbar_progress"
+                                android:thumb="@drawable/seekbar_thumb" />
+
+                            <TextView
+                                android:id="@+id/tvStartVideo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/sbVideo"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:fontFamily="@font/roboto_light_0"
+                                android:text="11:25"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvEndVideo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/sbVideo"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:fontFamily="@font/roboto_light_0"
+                                android:text="22:25"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_9sdp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_below="@+id/video_card_seekbar">
+
+            <ImageView
+                android:id="@+id/button_musicchange"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerInParent="true"
+                android:onClick="Music_Click"
+                android:src="@drawable/add_music_btn" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/audio_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_layout"
+            android:layout_margin="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:visibility="visible">
+
+            <com.sinaseyfi.advancedcardview.AdvancedCardView
+                android:id="@+id/rangseek_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cornerRadius="16dp"
+                app:shadow0_Outer_Alpha="0.2"
+                app:shadow0_Outer_Angle="180"
+                app:shadow0_Outer_Blur="10dp"
+                app:shadow0_Outer_Color="#33ffffff"
+                app:shadow0_Outer_Distance="@dimen/_3sdp"
+                app:shadow1_Outer_Alpha="0.2"
+                app:shadow1_Outer_Angle="0"
+                app:shadow1_Outer_Blur="10dp"
+                app:shadow1_Outer_Color="#1affffff"
+                app:shadow1_Outer_Distance="@dimen/_3sdp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#090916"
+                    android:paddingVertical="@dimen/_20sdp">
+
+                    <LinearLayout
+                        android:id="@+id/audio_title_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#090916"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <RelativeLayout
+                            android:id="@+id/rel_icon_music"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.4"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="#090916">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/music_icn" />
+
+                        </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1.3"
+                        android:layout_height="wrap_content">
+                        <TextView
+                        android:id="@+id/audio_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:text="Audio name "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_duration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/audio_name"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="00:00:00"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_8sdp"
+                            android:textStyle="bold" /></RelativeLayout>
+
+
+
+
+
+                        <ImageView
+                            android:id="@+id/audio_cancle"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.2"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginRight="@dimen/_6sdp"
+                            android:background="@drawable/cancel_icn" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/audio_seek_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/audio_title_layout"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <SeekBar
+                            android:id="@+id/audio_seek"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_marginRight="@dimen/_20sdp"
+                            />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/audio_seek">
+
+                            <TextView
+                                android:id="@+id/adtxtstart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:text="00:00:00"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_8sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/adtxtend"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:layout_marginTop="@dimen/_12sdp"
+                                android:text="00:00:00"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_8sdp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </com.sinaseyfi.advancedcardview.AdvancedCardView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:visibility="visible" />
+
+</RelativeLayout>

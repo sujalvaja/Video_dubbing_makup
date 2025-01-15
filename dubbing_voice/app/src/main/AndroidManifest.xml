@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--
+  <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="https" />
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+    </queries>
+    -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Dubbing_voice">
+
+        <activity
+            android:name=".videosound.changer.Activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".videosound.changer.Activity.MusicpreviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".videosound.changer.Activity.Fast_forward"
+            android:exported="false" />
+        <activity
+            android:name=".videosound.changer.Activity.Reversemotion"
+            android:exported="false" />
+        <activity
+            android:name=".videosound.changer.Activity.VideotoAudioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".videosound.changer.Activity.Slow_Motion"
+            android:exported="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".videosound.changer.Activity.VideoCropPreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videosound.changer.Activity.StartActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".videosound.changer.Activity.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videosound.changer.Activity.SelectVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videosound.changer.Activity.MuteVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videosound.changer.Activity.RecordingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videosound.changer.Activity.ChangeMusicActivity"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videosound.changer.Activity.MusicListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videosound.changer.Activity.VideoViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".videosound.changer.Activity.MyWorkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" />
+
+
+        <activity android:name=".filter.MainActivity"
+            android:exported="false">
+
+        </activity>
+
+        <activity android:name=".filter.filter.EditVideoActivity"
+            android:exported="false"/>
+
+        <activity android:name=".filter.share.ShareActivity"
+            android:exported="false"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

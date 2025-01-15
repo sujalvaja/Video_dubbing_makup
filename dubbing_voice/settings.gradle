@@ -1,0 +1,38 @@
+pluginManagement {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven {
+            url = 'https://oss.sonatype.org/content/repositories/snapshots/'
+        }
+        maven {
+            url 'https://dl.bintray.com/cjt/maven'
+        }
+       /* maven {
+            url "$rootDir/../node_modules/react-native/android"
+        }*/
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven {
+            url = 'https://oss.sonatype.org/content/repositories/snapshots/'
+        }
+        maven {
+            url 'https://dl.bintray.com/cjt/maven'
+        }
+       /* maven {
+            url "$rootDir/../node_modules/react-native/android"
+        }*/
+    }
+}
+rootProject.name = "dubbing_voice"
+include ':app'

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tedpermission_setting">tedpermission_setting</string>
+    <string name="share_video">Share Video</string>
+    <string name="select_mode">SELECT MODE</string>
+    <string name="title_dialog_detail" />
+    <string name="select_video">select video</string>
+    <string name="video_to_audio_n_converter">Video to audio \n converter</string>
+    <string name="saved_history">saved history</string>
+</resources>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/_24sdp"
+            android:src="@drawable/back_icn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:gravity="center"
+            android:text="@string/select_mode"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_medium_0"
+            android:textSize="@dimen/_16sdp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ad_layout"
+        android:layout_below="@+id/title_layout"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/uper_layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/change_audio_layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/change_audio_btn"
+                tools:ignore="Orientation" />
+
+
+            <LinearLayout
+                android:id="@+id/mute_layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/mute_audio_btn1"
+                tools:ignore="Orientation">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/record_layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/record_audio_btn1"
+                tools:ignore="Orientation">
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_below="@id/uper_layer"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/crop_layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/slow_mo_video_btn"
+                tools:ignore="Orientation" />
+
+            <LinearLayout
+                android:id="@+id/slowandfastmotion"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/fast_mo_video_btn"
+                tools:ignore="Orientation" />
+
+            <LinearLayout
+                android:id="@+id/Video_filter"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/filter_video_btn"
+                tools:ignore="Orientation" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_below="@id/center"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/Videotoaudio"
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/trim_video"
+                tools:ignore="Orientation" />
+
+            <LinearLayout
+                android:id="@+id/video_card_main"
+                android:layout_width="0dp"
+                android:layout_weight="0.9"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/vid_audio_converter_btn"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible" />
+    </RelativeLayout>
+</RelativeLayout>

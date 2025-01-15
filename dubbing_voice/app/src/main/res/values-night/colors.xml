@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorButtonPressed">#545879</color>
+    <color name="bgMain">#2B2B2B</color>
+    <color name="bgColorItemDashboard">#40B6E0</color>
+    <color name="green">#1FFF7C</color>
+    <color name="background">#1B1B1F</color>
+    <color name="dialog_background">#525252</color>
+</resources>
